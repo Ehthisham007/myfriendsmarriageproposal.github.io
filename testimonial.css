@@ -1,0 +1,356 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: whitesmoke;
+}
+
+.container{
+	position: absolute;
+	width: 90%;
+	height: 90vh;
+	/*border: 2px solid blueviolet;*/
+	text-align: center;
+	background-image: url("ImgAsset/fullbg2.jpg");
+	box-shadow: 0px 0px 20px skyblue;
+	overflow-y: scroll;
+}
+
+.container h3{
+	text-align: center;
+	margin: 2%;
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+.container h5{
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+.container #myself{
+	position: absolute;
+	width: 90%;
+	height: 30vh;
+	left: 5%;
+	margin-top: 10px;
+	box-shadow: 0px 0px 10px gray;
+	text-align: left;
+	overflow-y: scroll;
+	background-color: whitesmoke;
+}
+
+.container #myself p{
+	padding: 2%;
+}
+
+.container #myself h3{
+	text-align: left;
+	font-size: 1.3rem;
+}
+
+
+/*//////////////////////////////////////////////*/
+/*img {vertical-align: middle;}*/
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 10px;
+  top:55%;
+  /*left: 40;*/
+  width: 20%;
+}
+
+img{
+  height: 40vh;
+  width: auto;
+  border-radius: 10px;
+}
+
+
+.slideshow-container .mySlides{
+	width: auto;
+	height: 40vh;
+	position: relative;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  /*padding: 16px;*/
+  margin-top: -22px;
+  color: blue;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+	/*position: absolute;*/
+  right: -10px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+	/*position: absolute;*/
+  right: 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/*///////////////////////////////*/
+
+.points{
+	position: absolute;
+	top: 125%;
+	width: 80%;
+	height: auto;
+	background-color: whitesmoke;
+	box-shadow: 0px 10px 10px gray;
+	border-radius: 10px;
+	left: 10%;
+
+}
+
+ul{
+	list-style: none;
+}
+
+.points ul li{
+	text-align: left;
+	padding: 10px;
+}
+
+.points ul li p{
+		line-height: 1.5rem;
+		font-size: 1rem;
+}
+
+.container .points h3 {
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.form {
+  position: absolute;
+  top: 255%;
+  width: 60%;
+  height: 60vh;
+  left: 20%;
+
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: auto;
+}
+
+.form h3{
+	  text-align: left;
+    font-size: 1.3rem;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=button] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+
+.col-25 {
+  width: 25%;
+}
+
+.col-75 {
+  /*float: left;*/
+  width: 75%;
+  /*margin-top: 6px;*/
+}
+
+textarea{
+    height: 100px;
+    width: 80%;
+}
+
+label{
+	font-size: 0.9rem;
+}
+
+input{
+	padding: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 425px){
+	
+	.container{
+		background-image: url("ImgAsset/fullbg2.jpg");
+		background-size: cover	;
+		background-repeat: no-repeat;
+	}
+
+	.container h3{
+		font-size: 1.5rem;
+	}
+
+	.container h5{
+		font-size: 1rem;
+	}
+
+	.container #myself {
+		font-size: 0.8rem;
+	}
+
+
+	.slideshow-container{
+		width: 50%;
+		left: 0%;
+	}
+
+
+.MJI{
+	width: 40%;
+}
+
+	.points ul li p{
+		font-size: 0.9rem;
+	}
+
+	.form {
+    top: 379%;
+    width: 80%;
+    left: 10%;
+    height: auto;
+    height: 90vh;
+	}
+
+	.form h3{
+		font-size: 0.9rem;
+	}
+
+
+	textarea{
+    height: 60px;
+    width: 90%;
+	}
+
+	.col-25 {
+    width: 40%;
+	}
+
+
+}
+
+@media (max-width: 375px){
+
+	.form {
+    top: 440%;
+	}
+
+}
+
+@media (max-width: 425px){
+
+	.form {
+    top: 375%;
+	}
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
